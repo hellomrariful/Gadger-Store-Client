@@ -1,9 +1,10 @@
+import Header from "./Header";
 
 
 const Home = () => {
     return (
         <div>
-            home
+            <Header></Header>
         </div>
     );
 };
