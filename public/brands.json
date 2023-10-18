@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "brandName": "Apple",
+      "brandImage": "https://media.licdn.com/dms/image/D4D12AQHwi4jdRd3fQQ/article-cover_image-shrink_600_2000/0/1685279753620?e=2147483647&v=beta&t=7I-pJ0kDQfNl4w-0Ue8aPyol_X-aWOQlzp18NhTldys"
+    },
+    {
+      "id": 2,
+      "brandName": "Samsung",
+      "brandImage": "https://example.com/samsung.jpg"
+    },
+    {
+      "id": 3,
+      "brandName": "Google",
+      "brandImage": "https://example.com/google.jpg"
+    },
+    {
+      "id": 4,
+      "brandName": "Sony",
+      "brandImage": "https://example.com/sony.jpg"
+    },
+    {
+      "id": 5,
+      "brandName": "Microsoft",
+      "brandImage": "https://example.com/microsoft.jpg"
+    },
+    {
+      "id": 6,
+      "brandName": "JBL",
+      "brandImage": "https://www.jbl.com/on/demandware.static/-/Library-Sites-SharedLibrary-JB/default/dw06988918/images/logo.svg"
+    }
+  ]
+  
