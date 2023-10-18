@@ -34,7 +34,7 @@ const Navbar = () => {
     <>
       <nav className="flex gap-3 md:gap-4 lg:gap-10 lg:text-xl text-[18px]">
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/addproduct">Add Product</NavLink>
+        <NavLink to="/addProduct">Add Product</NavLink>
         <NavLink to="/cart">My Cart</NavLink>
         {user ? null : <NavLink to="/register">Register</NavLink>}
       </nav>
@@ -150,7 +150,7 @@ const Navbar = () => {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li className="block text-gray-900  hover:text-blue-700">
-                <NavLink to="/addproduct">Add Product</NavLink>
+                <NavLink to="/addProduct">Add Product</NavLink>
               </li>
               <li className="block text-gray-900  hover:text-blue-700">
                 <NavLink to="/cart">Your Cart</NavLink>

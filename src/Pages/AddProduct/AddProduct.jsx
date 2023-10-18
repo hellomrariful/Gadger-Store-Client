@@ -1,16 +1,35 @@
+import Swal from "sweetalert2";
+
 const AddProduct = () => {
   const handelAddProduct = (e) => {
     e.preventDefault();
-    const form = e.target
-    const name = form.name.value
-    const brand = form.brand.value
-    const price = form.price.value
-    const type = form.type.value
-    const rating = form.rating.value
-    const photo = form.photo.value
-    const description = form.description.value
-    const product = {name, brand, price, type, rating, photo, description}
+    const form = e.target;
+    const name = form.name.value;
+    const brand = form.brand.value;
+    const price = form.price.value;
+    const type = form.type.value;
+    const rating = form.rating.value;
+    const photo = form.photo.value;
+    const description = form.description.value;
+    const product = { name, brand, price, type, rating, photo, description };
     console.log(product);
+
+    // send data to server
+    fetch("http://localhost:5000/products", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(product),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          Swal.fire("Good job!", "Product Added", "success");
+        }
+        // form.reset();
+      });
   };
 
   return (
@@ -52,12 +71,12 @@ const AddProduct = () => {
                 <option className="text-gray-400" value="" selected>
                   <p className="">Select Product Brand</p>
                 </option>
-                <option value="apple">Apple</option>
-                <option value="google">Google</option>
-                <option value="samsung">Samsung</option>
-                <option value="sony">Sony</option>
-                <option value="microsoft">Microsoft</option>
-                <option value="jbl">JBL</option>
+                <option value="Apple">Apple</option>
+                <option value="Google">Google</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Sony">Sony</option>
+                <option value="Microsoft">Microsoft</option>
+                <option value="JBL">JBL</option>
               </select>
             </div>
 

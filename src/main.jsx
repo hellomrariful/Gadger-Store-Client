@@ -11,6 +11,11 @@ import Register from "./Pages/Register/Register";
 import Cart from "./Pages/Cart/Cart";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import AddProduct from "./Pages/AddProduct/AddProduct";
+import Apple from "./Pages/Brand/Apple";
+import UpdateProduct from "./Pages/UpdateProduct/UpdateProduct";
+import ProductDetails from "./Pages/ProductDetails/ProductDetails";
+import Google from "./Pages/Brand/Google";
+import Microsoft from "./Pages/Brand/Microsoft";
 
 const router = createBrowserRouter([
   {
@@ -20,15 +25,17 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: () => fetch('http://localhost:5000/products')
       },
       {
-        path: "/addproduct",
-        element: <AddProduct></AddProduct>
+        path: "/addProduct",
+        element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
       },
       {
         path: "/cart",
-        element: <PrivateRoute><Cart></Cart></PrivateRoute>
+        element: <PrivateRoute><Cart></Cart></PrivateRoute>,
+        loader: () => fetch('http://localhost:5000/cartProducts')
       },
       
       {
@@ -38,6 +45,31 @@ const router = createBrowserRouter([
       {
         path:"/register",
         element: <Register></Register>
+      },
+      {
+        path:'/apple',
+        element: <Apple></Apple>,
+        loader: () => fetch('http://localhost:5000/products/brand/Apple')
+      },
+      {
+        path:'/google',
+        element: <Google></Google>,
+        loader: () => fetch('http://localhost:5000/products/brand/Google')
+      },
+      {
+        path:'/microsoft',
+        element: <Microsoft></Microsoft>,
+        loader: () => fetch('http://localhost:5000/products/brand/Microsoft')
+      },
+      {
+        path:'updateProduct/:id',
+        element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
+        loader: ({params}) => fetch(`http://localhost:5000/products/id/${params.id}`)
+      },
+      {
+        path:'productDetails/:id',
+        element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
+        loader: ({params}) => fetch(`http://localhost:5000/products/id/${params.id}`)
       }
     ],
   },
