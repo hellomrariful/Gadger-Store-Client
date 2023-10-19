@@ -9,22 +9,20 @@ const ProductDetails = () => {
     e.preventDefault();
     console.log(product);
 
-    fetch('http://localhost:5000/cartProducts', {
-        method: 'POST', 
-        headers: {
-            'content-type': 'application/json'
-        },
-        body: JSON.stringify(product)
+    fetch("https://gadger-store-server.vercel.app/cartProducts", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(product),
     })
-    .then((res) => res.json())
+      .then((res) => res.json())
       .then((data) => {
         console.log(data);
         if (data.insertedId) {
           Swal.fire("Good job!", "Product Added", "success");
         }
       });
-
-
   };
 
   return (

@@ -26,59 +26,87 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch("https://gadger-store-server.vercel.app/products"),
       },
       {
         path: "/addProduct",
-        element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
+        element: (
+          <PrivateRoute>
+            <AddProduct></AddProduct>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/cart",
-        element: <PrivateRoute><Cart></Cart></PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/cartProducts')
+        element: (
+          <PrivateRoute>
+            <Cart></Cart>
+          </PrivateRoute>
+        ),
+        loader: () =>
+          fetch("https://gadger-store-server.vercel.app/cartProducts"),
       },
-      
+
       {
-        path:"/login",
-        element: <Login></Login>
+        path: "/login",
+        element: <Login></Login>,
       },
       {
-        path:"/register",
-        element: <Register></Register>
+        path: "/register",
+        element: <Register></Register>,
       },
       {
-        path:'/apple',
+        path: "/apple",
         element: <Apple></Apple>,
-        loader: () => fetch('http://localhost:5000/products/brand/Apple')
+        loader: () =>
+          fetch("https://gadger-store-server.vercel.app/products/brand/Apple"),
       },
       {
-        path:'/google',
+        path: "/google",
         element: <Google></Google>,
-        loader: () => fetch('http://localhost:5000/products/brand/Google')
+        loader: () =>
+          fetch("https://gadger-store-server.vercel.app/products/brand/Google"),
       },
       {
-        path:'/microsoft',
+        path: "/microsoft",
         element: <Microsoft></Microsoft>,
-        loader: () => fetch('http://localhost:5000/products/brand/Microsoft')
+        loader: () =>
+          fetch(
+            "https://gadger-store-server.vercel.app/products/brand/Microsoft"
+          ),
       },
       {
-        path:'updateProduct/:id',
-        element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/products/id/${params.id}`)
+        path: "updateProduct/:id",
+        element: (
+          <PrivateRoute>
+            <UpdateProduct></UpdateProduct>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(
+            `https://gadger-store-server.vercel.app/products/id/${params.id}`
+          ),
       },
       {
-        path:'productDetails/:id',
-        element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/products/id/${params.id}`)
-      }
+        path: "productDetails/:id",
+        element: (
+          <PrivateRoute>
+            <ProductDetails></ProductDetails>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(
+            `https://gadger-store-server.vercel.app/products/id/${params.id}`
+          ),
+      },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-   <AuthProvider>
-   <RouterProvider router={router} />
-   </AuthProvider>
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>
 );

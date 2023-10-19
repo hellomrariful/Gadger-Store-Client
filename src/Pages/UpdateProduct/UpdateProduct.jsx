@@ -1,8 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 
 const UpdateProduct = () => {
-
-
   const products = useLoaderData();
 
   const { name, brand, _id, photo } = products;
@@ -21,10 +19,6 @@ const UpdateProduct = () => {
 
 export default UpdateProduct;
 
-
-
-
-
 // import { useParams } from "react-router-dom";
 // import { useEffect, useState } from "react";
 
@@ -36,7 +30,7 @@ export default UpdateProduct;
 
 //     // Fetch data for the specific ID when the component mounts
 //     useEffect(() => {
-//         fetch(`http://localhost:5000/products/id/${id}`)
+//         fetch(`https://gadger-store-server.vercel.app/products/id/${id}`)
 //             .then((response) => response.json())
 //             .then((data) => setProduct(data))
 //             .catch((error) => console.error("Error fetching data:", error));
