@@ -16,6 +16,9 @@ import UpdateProduct from "./Pages/UpdateProduct/UpdateProduct";
 import ProductDetails from "./Pages/ProductDetails/ProductDetails";
 import Google from "./Pages/Brand/Google";
 import Microsoft from "./Pages/Brand/Microsoft";
+import Samsung from "./Pages/Brand/Samsung";
+import Sony from "./Pages/Brand/Sony";
+import Canon from "./Pages/Brand/Canon";
 
 const router = createBrowserRouter([
   {
@@ -68,6 +71,21 @@ const router = createBrowserRouter([
         path: "/microsoft",
         element: <Microsoft></Microsoft>,
         loader: () => fetch("http://localhost:5000/products/brand/Microsoft"),
+      },
+      {
+        path: "/samsung",
+        element: <Samsung></Samsung>,
+        loader: () => fetch("http://localhost:5000/products/brand/Samsung"),
+      },
+      {
+        path: "/sony",
+        element: <Sony></Sony>,
+        loader: () => fetch("http://localhost:5000/products/brand/Sony"),
+      },
+      {
+        path: "/canon",
+        element: <Canon></Canon>,
+        loader: () => fetch("http://localhost:5000/products/brand/Canon"),
       },
       {
         path: "updateProduct/:id",
