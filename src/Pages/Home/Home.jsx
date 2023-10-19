@@ -83,8 +83,8 @@ const Home = () => {
       <h1 className="text-center mt-20 font-bold text-3xl font-heading">
         Why Gadger?
       </h1>
-      <div className="grid justify-center lg:grid-cols-4 md:grid-cols-2 space-y-6 items-center mt-10 place-items-center">
-        <div className="md:flex grid place-items-center items-center gap-1">
+      <div className="grid justify-center lg:grid-cols-4 md:grid-cols-2 items-center md:mt-10 place-items-center space-y-6 lg:space-y-0">
+        <div className="md:flex grid place-items-center items-center gap-1 mt-6 lg:mt-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"

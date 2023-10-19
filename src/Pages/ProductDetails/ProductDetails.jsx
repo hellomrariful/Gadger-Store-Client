@@ -27,7 +27,7 @@ const ProductDetails = () => {
 
   return (
     <div>
-      this is details of ProductDetails: {_id}
+      
       <h1>{name}</h1>
       <img src={photo} alt="" />
       <button
