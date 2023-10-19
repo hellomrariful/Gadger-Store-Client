@@ -9,7 +9,7 @@ const ProductDetails = () => {
     e.preventDefault();
     console.log(product);
 
-    fetch("https://gadger-store-server.vercel.app/cartProducts", {
+    fetch("http://localhost:5000/cartProducts", {
       method: "POST",
       headers: {
         "content-type": "application/json",

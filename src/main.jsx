@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("https://gadger-store-server.vercel.app/products"),
+        loader: () => fetch("http://localhost:5000/products"),
       },
       {
         path: "/addProduct",
@@ -43,8 +43,7 @@ const router = createBrowserRouter([
             <Cart></Cart>
           </PrivateRoute>
         ),
-        loader: () =>
-          fetch("https://gadger-store-server.vercel.app/cartProducts"),
+        loader: () => fetch("http://localhost:5000/cartProducts"),
       },
 
       {
@@ -58,22 +57,17 @@ const router = createBrowserRouter([
       {
         path: "/apple",
         element: <Apple></Apple>,
-        loader: () =>
-          fetch("https://gadger-store-server.vercel.app/products/brand/Apple"),
+        loader: () => fetch("http://localhost:5000/products/brand/Apple"),
       },
       {
         path: "/google",
         element: <Google></Google>,
-        loader: () =>
-          fetch("https://gadger-store-server.vercel.app/products/brand/Google"),
+        loader: () => fetch("http://localhost:5000/products/brand/Google"),
       },
       {
         path: "/microsoft",
         element: <Microsoft></Microsoft>,
-        loader: () =>
-          fetch(
-            "https://gadger-store-server.vercel.app/products/brand/Microsoft"
-          ),
+        loader: () => fetch("http://localhost:5000/products/brand/Microsoft"),
       },
       {
         path: "updateProduct/:id",
@@ -83,9 +77,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(
-            `https://gadger-store-server.vercel.app/products/id/${params.id}`
-          ),
+          fetch(`http://localhost:5000/products/id/${params.id}`),
       },
       {
         path: "productDetails/:id",
@@ -95,9 +87,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(
-            `https://gadger-store-server.vercel.app/products/id/${params.id}`
-          ),
+          fetch(`http://localhost:5000/products/id/${params.id}`),
       },
     ],
   },

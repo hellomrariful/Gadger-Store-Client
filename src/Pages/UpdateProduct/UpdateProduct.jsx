@@ -30,7 +30,7 @@ export default UpdateProduct;
 
 //     // Fetch data for the specific ID when the component mounts
 //     useEffect(() => {
-//         fetch(`https://gadger-store-server.vercel.app/products/id/${id}`)
+//         fetch(`http://localhost:5000/products/id/${id}`)
 //             .then((response) => response.json())
 //             .then((data) => setProduct(data))
 //             .catch((error) => console.error("Error fetching data:", error));
