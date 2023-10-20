@@ -41,7 +41,7 @@ import {
   
     useEffect(() => {
       const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
-        console.log("user in ");
+        // console.log("user in ");
         SetUser(currentUser);
         setLoading(false);
       });
