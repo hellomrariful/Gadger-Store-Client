@@ -35,7 +35,7 @@ const AddProduct = () => {
   return (
     <div>
       <h2  className="text-center mt-20 font-bold text-3xl font-heading mb-20">Add New Product</h2>
-      <div className=" bg-[#F4F3F0] lg:px-40 md:px-16 px-8 md:mx-10 pt-14 pb-10">
+      <div className=" bg-backgroundColor lg:px-40 md:px-16 px-8 md:mx-10 pt-14 pb-10">
         <form onSubmit={handelAddProduct}>
           <div className="grid gap-6 mb-6 md:grid-cols-2">
             <div>
@@ -163,7 +163,7 @@ const AddProduct = () => {
           </div>
 
           <input
-            className="bg-[#D2B48C] w-full py-3 rounded-lg cursor-pointer"
+            className="bg-primaryColor w-full py-3 rounded-lg cursor-pointer"
             type="submit"
             value="Add Product"
           />
