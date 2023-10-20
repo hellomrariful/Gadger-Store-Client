@@ -1,6 +1,18 @@
 import { Link } from "react-router-dom";
 
 const ProductsCard = ({ product }) => {
+
+//   const descriptionWord = product.description.length
+// const description = product.description
+//   const wordLimit = 20
+
+// const displayedDescription =
+//   descriptionWord <= wordLimit
+//     ? description
+//     : `${description.split(' ').slice(0, wordLimit).join(' ')}...`;
+
+
+//   console.log(descriptionWord);
   return (
     <div>
       <div className="  text-gray-700 bg-white shadow-md  rounded-xl bg-clip-border">

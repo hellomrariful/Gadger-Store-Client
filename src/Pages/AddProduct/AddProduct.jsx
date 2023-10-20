@@ -15,7 +15,7 @@ const AddProduct = () => {
     console.log(product);
 
     // send data to server
-    fetch("http://localhost:5000/products", {
+    fetch("https://gadger-store-server.vercel.app/products", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -34,7 +34,9 @@ const AddProduct = () => {
 
   return (
     <div>
-      <h2  className="text-center mt-20 font-bold text-3xl font-heading mb-20">Add New Product</h2>
+      <h2 className="text-center mt-20 font-bold text-3xl font-heading mb-20">
+        Add New Product
+      </h2>
       <div className=" bg-backgroundColor lg:px-40 md:px-16 px-8 md:mx-10 pt-14 pb-10">
         <form onSubmit={handelAddProduct}>
           <div className="grid gap-6 mb-6 md:grid-cols-2">

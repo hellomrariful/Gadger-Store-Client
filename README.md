@@ -1,8 +1,21 @@
-# React + Vite
+# Gadger
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## [ Gadger Live Link](https://gadgerbd.web.app/)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live URL: [https://gadgerbd.web.app/](https://gadgerbd.web.app/)
+
+<details>
+<summary style="font-weight: bold; text:2xl" >Five features and functionalities of Gadger</summary>
+
+- This project is developed for various Brand Product Sell.
+
+- In this project, You can Buy Latest and Greatest Products.
+
+- Also This Project allows users to create accounts for buying Products.
+
+- When users logged in then user can access detailed information about each product, and also user can see his/her added product in My Cart section.
+
+- Also user can find his/her by brand. This projects also has add light/dark mode and many more...
+
+</details>

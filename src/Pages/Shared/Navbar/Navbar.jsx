@@ -64,7 +64,7 @@ const Navbar = () => {
     <nav className=" border-gray-200 dark:bg-gray-900">
       <div className=" flex flex-wrap items-center justify-between mx-auto mt-8 mb-10">
         <Link className="flex items-center">
-          <img src={logo} className="h-12 mr-3" alt="" />
+          <img src={logo} className="md:h-12 h-10 md:mr-3" alt="" />
         </Link>
         <div className="flex items-center md:order-2">
           <div className="items-center mr-5">

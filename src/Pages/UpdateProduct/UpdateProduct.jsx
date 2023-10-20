@@ -35,7 +35,7 @@
 //     console.log(updatedProduct);
 
 //     // send data to server
-//     fetch(`http://localhost:5000/products/${_id}`, {
+//     fetch(`https://gadger-store-server.vercel.app/products/${_id}`, {
 //       method: "PUT",
 //       headers: {
 //         "content-type": "application/json",
@@ -203,13 +203,6 @@
 
 // export default UpdateProduct;
 
-
-
-
-
-
-
-
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -220,7 +213,7 @@ const UpdateProduct = () => {
 
   console.log(_id);
 
-  console.log('this is id', _id);
+  console.log("this is id", _id);
 
   console.log(product);
 
@@ -247,7 +240,7 @@ const UpdateProduct = () => {
     console.log(updatedProduct);
 
     // send data to server
-    fetch(`http://localhost:5000/products/${_id}`, {
+    fetch(`https://gadger-store-server.vercel.app/products/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

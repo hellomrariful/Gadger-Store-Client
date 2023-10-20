@@ -29,7 +29,7 @@
 //       {
 //         path: "/",
 //         element: <Home></Home>,
-//         loader: () => fetch("http://localhost:5000/products"),
+//         loader: () => fetch("https://gadger-store-server.vercel.app/products"),
 //       },
 //       {
 //         path: "/addProduct",
@@ -46,7 +46,7 @@
 //             <Cart></Cart>
 //           </PrivateRoute>
 //         ),
-//         loader: () => fetch(`http://localhost:5000/cartProducts`),
+//         loader: () => fetch(`https://gadger-store-server.vercel.app/cartProducts`),
 //       },
 
 //       {
@@ -60,32 +60,32 @@
 //       {
 //         path: "/apple",
 //         element: <Apple></Apple>,
-//         loader: () => fetch("http://localhost:5000/products/brand/Apple"),
+//         loader: () => fetch("https://gadger-store-server.vercel.app/products/brand/Apple"),
 //       },
 //       {
 //         path: "/google",
 //         element: <Google></Google>,
-//         loader: () => fetch("http://localhost:5000/products/brand/Google"),
+//         loader: () => fetch("https://gadger-store-server.vercel.app/products/brand/Google"),
 //       },
 //       {
 //         path: "/microsoft",
 //         element: <Microsoft></Microsoft>,
-//         loader: () => fetch("http://localhost:5000/products/brand/Microsoft"),
+//         loader: () => fetch("https://gadger-store-server.vercel.app/products/brand/Microsoft"),
 //       },
 //       {
 //         path: "/samsung",
 //         element: <Samsung></Samsung>,
-//         loader: () => fetch("http://localhost:5000/products/brand/Samsung"),
+//         loader: () => fetch("https://gadger-store-server.vercel.app/products/brand/Samsung"),
 //       },
 //       {
 //         path: "/sony",
 //         element: <Sony></Sony>,
-//         loader: () => fetch("http://localhost:5000/products/brand/Sony"),
+//         loader: () => fetch("https://gadger-store-server.vercel.app/products/brand/Sony"),
 //       },
 //       {
 //         path: "/canon",
 //         element: <Canon></Canon>,
-//         loader: () => fetch("http://localhost:5000/products/brand/Canon"),
+//         loader: () => fetch("https://gadger-store-server.vercel.app/products/brand/Canon"),
 //       },
 //       {
 //         path: "updateProduct/:id",
@@ -94,13 +94,13 @@
 //             <UpdateProduct></UpdateProduct>
 //           </PrivateRoute>,
 //         loader: ({ params }) =>
-//           fetch(`http://localhost:5000/products/id/${params.id}`),
+//           fetch(`https://gadger-store-server.vercel.app/products/id/${params.id}`),
 //       },
 //       {
 //         path: "productDetails/:id",
 //         element: <PrivateRoute> <ProductDetails></ProductDetails></PrivateRoute>,
 //         loader: ({ params }) =>
-//           fetch(`http://localhost:5000/products/id/${params.id}`),
+//           fetch(`https://gadger-store-server.vercel.app/products/id/${params.id}`),
 //       },
 //     ],
 //   },
@@ -147,7 +147,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("http://localhost:5000/products"),
+        loader: () => fetch("https://gadger-store-server.vercel.app/products"),
       },
       {
         path: "/addProduct",
@@ -164,7 +164,7 @@ const router = createBrowserRouter([
             <Cart></Cart>
           </PrivateRoute>
         ),
-        loader: () => fetch(`http://localhost:5000/cartProducts`),
+        loader: () => fetch(`https://gadger-store-server.vercel.app/cartProducts`),
       },
 
       {
@@ -178,32 +178,32 @@ const router = createBrowserRouter([
       {
         path: "/apple",
         element: <Apple></Apple>,
-        loader: () => fetch("http://localhost:5000/products/brand/Apple"),
+        loader: () => fetch("https://gadger-store-server.vercel.app/products/brand/Apple"),
       },
       {
         path: "/google",
         element: <Google></Google>,
-        loader: () => fetch("http://localhost:5000/products/brand/Google"),
+        loader: () => fetch("https://gadger-store-server.vercel.app/products/brand/Google"),
       },
       {
         path: "/microsoft",
         element: <Microsoft></Microsoft>,
-        loader: () => fetch("http://localhost:5000/products/brand/Microsoft"),
+        loader: () => fetch("https://gadger-store-server.vercel.app/products/brand/Microsoft"),
       },
       {
         path: "/samsung",
         element: <Samsung></Samsung>,
-        loader: () => fetch("http://localhost:5000/products/brand/Samsung"),
+        loader: () => fetch("https://gadger-store-server.vercel.app/products/brand/Samsung"),
       },
       {
         path: "/sony",
         element: <Sony></Sony>,
-        loader: () => fetch("http://localhost:5000/products/brand/Sony"),
+        loader: () => fetch("https://gadger-store-server.vercel.app/products/brand/Sony"),
       },
       {
         path: "/canon",
         element: <Canon></Canon>,
-        loader: () => fetch("http://localhost:5000/products/brand/Canon"),
+        loader: () => fetch("https://gadger-store-server.vercel.app/products/brand/Canon"),
       },
       {
         path: "updateProduct/:id",
@@ -212,13 +212,13 @@ const router = createBrowserRouter([
             <UpdateProduct></UpdateProduct>
           </PrivateRoute>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.id}`),
+          fetch(`https://gadger-store-server.vercel.app/products/${params.id}`),
       },
       {
         path: "productDetails/:id",
         element: <PrivateRoute> <ProductDetails></ProductDetails></PrivateRoute>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.id}`),
+          fetch(`https://gadger-store-server.vercel.app/products/${params.id}`),
       },
     ],
   },
