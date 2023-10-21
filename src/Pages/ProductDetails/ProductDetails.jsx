@@ -45,8 +45,9 @@ const ProductDetails = () => {
             .then((data) => {
               console.log(data);
               if (data.insertedId) {
-                Swal.fire("Good job!", "Product Added", "success");
+                Swal.fire("Congratulation!", product.name + " Successfully Added Your Cart", "success");
               }
+              
             });
         }
       });

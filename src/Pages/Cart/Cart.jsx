@@ -32,15 +32,15 @@ const Cart = () => {
     e.preventDefault();
     Swal.fire(
       "Congratulation!",
-      "You Successfully buy the Product!",
+      "You Successfully buy your cart Product!",
       "success"
     );
   };
 
-  const handleDelete = (id) => {
+  const handleDelete = (id, productName) => {
     Swal.fire({
-      title: "Are you sure?",
-      text: "You won't be able to revert this!",
+      title: "Confirm Deletion!",
+      text: `Are you sure to delete ${productName}? form cart`,
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
@@ -95,7 +95,8 @@ const Cart = () => {
               <div className="flex justify-between border-b pb-8">
                 <h1 className="font-semibold text-2xl">Your Cart</h1>
                 <h2 className="font-semibold text-2xl">
-                  {products.length} {products.length === 1 ? "Item" : "Items"} Added
+                  {products.length} {products.length === 1 ? "Item" : "Items"}{" "}
+                  Added
                 </h2>
               </div>
               <div className="flex mt-10 mb-5">
@@ -143,7 +144,9 @@ const Cart = () => {
 
                         <Link
                           className="font-bold text-2xl text-red-500 hover-text-red-500 text-red text-center"
-                          onClick={() => handleDelete(product._id)}
+                          onClick={() =>
+                            handleDelete(product._id, product.name)
+                          }
                         >
                           <AiFillDelete></AiFillDelete>
                         </Link>
@@ -196,7 +199,7 @@ const Cart = () => {
               </h1>
               <div className="flex justify-between mt-10 mb-5">
                 <span className="font-semibold text-sm uppercase">
-                Items {products.length}
+                  Items {products.length}
                 </span>
                 <span className="font-semibold text-sm">
                   $
