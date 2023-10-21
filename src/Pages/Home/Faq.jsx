@@ -9,7 +9,7 @@ const Faq = ({ faqItems }) => {
   };
 
   return (
-    <div>
+    <div className=" ">
       {faqItems.map((faqItem, index) => (
         <div key={index} className="relative mb-3">
           <h6 className="mb-0">

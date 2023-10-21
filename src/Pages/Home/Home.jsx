@@ -31,7 +31,7 @@ const Home = () => {
     {
       question: "Do you offer international shipping?",
       answer:
-      "Yes, we do offer international shipping. Please note that additional shipping fees may apply, and delivery times can vary based on your location.",
+        "Yes, we do offer international shipping. Please note that additional shipping fees may apply, and delivery times can vary based on your location.",
     },
   ];
 
@@ -39,7 +39,7 @@ const Home = () => {
     <div>
       <Header></Header>
 
-      <h1 className="text-center mt-20 font-bold text-3xl font-heading">
+      <h1 className="text-center mt-20 font-bold text-4xl font-heading">
         Shop By Brands
       </h1>
 
@@ -76,7 +76,7 @@ const Home = () => {
         </div>
       </div>
 
-      <h1 className="text-center mt-20 font-bold text-3xl font-heading mb-10">
+      <h1 className="text-center mt-20 font-bold text-4xl font-heading mb-10">
         Featured Products
       </h1>
 
@@ -95,7 +95,7 @@ const Home = () => {
       </div>
 
       {/* Why Gager */}
-      <h1 className="text-center mt-20 font-bold text-3xl font-heading">
+      <h1 className="text-center mt-20 font-bold text-4xl font-heading">
         Why Gadger?
       </h1>
       <div className="grid justify-center lg:grid-cols-4 md:grid-cols-2 items-center md:mt-10 place-items-center space-y-6 lg:space-y-0">
@@ -272,13 +272,15 @@ const Home = () => {
           <h1 className=" text-descriptionColor text-xl">24/7 Support</h1>
         </div>
       </div>
-      <div data-aos="fade-up"
+      <div
+        data-aos="fade-up"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1000"
-        data-aos-offset="100">
-           <h1 className="text-center mt-20 font-bold text-3xl font-heading mb-5">
-           Have Question?
-      </h1>
+        data-aos-offset="100"
+      >
+        <h1 className="text-center mt-20 font-bold text-4xl font-heading mb-5">
+          Have Question?
+        </h1>
         <div className="text-2xl">
           <Faq faqItems={faqItems} />
         </div>
