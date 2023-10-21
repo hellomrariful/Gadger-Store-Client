@@ -61,19 +61,19 @@ const Cart = () => {
       <div>
         {isLoading ? ( // Loading state check
           <div className="flex justify-center items-center h-screen">
-        <Oval
-          height={50}
-          width={50}
-          color=" #FF444A"
-          wrapperStyle={{}}
-          wrapperClass=""
-          visible={true}
-          ariaLabel="oval-loading"
-          secondaryColor="#FF444A"
-          strokeWidth={4}
-          strokeWidthSecondary={2}
-        />
-      </div>
+            <Oval
+              height={50}
+              width={50}
+              color=" #FF444A"
+              wrapperStyle={{}}
+              wrapperClass=""
+              visible={true}
+              ariaLabel="oval-loading"
+              secondaryColor="#FF444A"
+              strokeWidth={4}
+              strokeWidthSecondary={2}
+            />
+          </div>
         ) : products.length > 0 ? (
           products.map((product) => (
             <div key={product._id} className="space-y-4">
@@ -134,14 +134,12 @@ const Cart = () => {
                   </div>
                 </div>
               </div>
-              <div>
-              </div>
+              <div></div>
             </div>
-            
           ))
         ) : (
-          <div className="grid justify-center items-center place-content-center mx-40">
-            <div className="mt-40 mx-auto">
+          <div className="grid justify-center items-center place-content-center md:mx-40">
+            <div className="lg:mt-40 mx-auto">
               <img className="w-full h-fit" src={canon} alt="" />
             </div>
             <h1 className="text-center text-2xl font-semibold">
@@ -152,7 +150,7 @@ const Cart = () => {
               cart. You will find a lot of interesting products on our "Shop"
               page.
             </p>
-            <Link className="text-center" to={"/"}>
+            <Link className="text-center" to={"/shop"}>
               <button className="bg-primaryColor py-4 px-3 rounded-lg mt-5 text-white ">
                 Return To Shop
               </button>

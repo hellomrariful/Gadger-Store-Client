@@ -1,11 +1,5 @@
-
 import React from "react";
-import {
-  FaAngleLeft,
-  FaAngleRight,
-  FaPen,
-  FaStar,
-} from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight, FaPen, FaStar } from "react-icons/fa";
 import { Link, useLoaderData } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
 
@@ -13,10 +7,10 @@ const Sony = () => {
   const products = useLoaderData();
 
   const imageUrls = [
-    "https://www.apple.com/v/iphone-15-pro/b/images/overview/welcome/hero_endframe__ov6ewwmbhiqq_medium_2x.jpg",
-    "https://i.ibb.co/VTswGmg/img-06.jpg",
-    "https://i.ibb.co/MC3ryyB/image.png",
-    "https://i.ibb.co/MC3ryyB/image.png",
+    "https://i.ytimg.com/vi/UZUu0m8kciM/maxresdefault.jpg",
+    "https://sony.scene7.com/is/image/sonyglobalsolutions/BRAVIAXR-banner-ggpd-8691?$promotionTilesMobile$&fmt=png-alpha",
+    "https://www.roadtovr.com/wp-content/uploads/2016/05/sony-playstation-vr-banner1.jpg",
+    "https://blog.playstation.com/tachyon/2022/11/7170d4d947d7e5cae40c0920dcbe42233b63cbea.jpeg?resize=1088%2C612&crop_strategy=smart",
   ];
 
   const [activeIndex, setActiveIndex] = React.useState(0);
@@ -88,73 +82,82 @@ const Sony = () => {
         </div>
       </div>
 
-      
-
       {products.length === 0 ? (
-        <div className="text-center mt-20 text-red-500  font-bold text-3xl font-heading">Sold Out!! Products Not Available</div>
+        <div className="text-center mt-20 text-red-500  font-bold text-3xl font-heading">
+          Sold Out!! Products Not Available
+        </div>
       ) : (
         <div>
-          <h1 className="text-center mt-20 mb-10 font-bold text-3xl font-heading">
-        Top Products Of Sony
-      </h1>
-          <div className="grid lg:grid-cols-2 gap-5">
-          {products.map((product) => (
-            <div key={product._id}>
-              <div className="bg-backgroundColor grid grid-cols-3 items-center h-60 py-4 px-2 w-full">
-                <div className="ml-2">
-                  <img className="max-h-40" src={product.photo} alt="" />
-                </div>
-
-                <div className="-mr-20 ml-2 space-y-1">
-                  <h3 className="font-semibold">
-                    Name:{" "}
-                    <span className="text-descriptionColor">{product.name}</span>
-                  </h3>
-                  <h3 className="font-semibold">
-                    Brand Name:{" "}
-                    <span className="text-descriptionColor">{product.brand}</span>
-                  </h3>
-                  <h3 className="font-semibold">
-                    Price:{" "}
-                    <span className="text-descriptionColor">${product.price}</span>
-                  </h3>
-                  <h3 className="font-semibold">
-                    Type:{" "}
-                    <span className="text-descriptionColor">{product.type}</span>
-                  </h3>
-                  <p className="flex items-center gap-1">
-                    <span>
-                      <span className="font-semibold">Rating:</span>{" "}
-                      <span className="text-descriptionColor">{product.rating}</span>
-                    </span>
-                    <span>
-                      <FaStar></FaStar>
-                    </span>
-                  </p>
-                </div>
-
-                <div className="space-y-4 ml-20">
-                  <div>
-                    <Link to={`/productDetails/${product._id}`}>
-                      <button className="btn bg-primaryColor text-white">
-                        <FaEye></FaEye>
-                      </button>
-                    </Link>
+          <h1 className="text-center md:mt-20 mt-10 px-5 mb-10 font-bold text-3xl font-heading">
+            Top Products Of Sony
+          </h1>
+          <div className="grid md:grid-cols-2 gap-5">
+            {products.map((product) => (
+              <div key={product._id}>
+                <div className="bg-backgroundColor grid grid-cols-3 items-center h-60 py-4 px-2 w-full">
+                  <div className="ml-2">
+                    <img className="max-h-40" src={product.photo} alt="" />
                   </div>
-                  <div>
-                    <Link to={`/updateProduct/${product._id}`}>
-                      <button className="btn bg-primaryColor text-white">
-                        <FaPen></FaPen>
-                      </button>
-                    </Link>
+
+                  <div className="-mr-20 ml-2 space-y-1">
+                    <h3 className="font-semibold">
+                      Name:{" "}
+                      <span className="text-descriptionColor">
+                        {product.name}
+                      </span>
+                    </h3>
+                    <h3 className="font-semibold">
+                      Brand Name:{" "}
+                      <span className="text-descriptionColor">
+                        {product.brand}
+                      </span>
+                    </h3>
+                    <h3 className="font-semibold">
+                      Price:{" "}
+                      <span className="text-descriptionColor">
+                        ${product.price}
+                      </span>
+                    </h3>
+                    <h3 className="font-semibold">
+                      Type:{" "}
+                      <span className="text-descriptionColor">
+                        {product.type}
+                      </span>
+                    </h3>
+                    <p className="flex items-center gap-1">
+                      <span>
+                        <span className="font-semibold">Rating:</span>{" "}
+                        <span className="text-descriptionColor">
+                          {product.rating}
+                        </span>
+                      </span>
+                      <span>
+                        <FaStar></FaStar>
+                      </span>
+                    </p>
+                  </div>
+
+                  <div className="space-y-4 ml-16">
+                    <div>
+                      <Link to={`/productDetails/${product._id}`}>
+                        <button className="btn bg-primaryColor text-white">
+                          <FaEye></FaEye>
+                        </button>
+                      </Link>
+                    </div>
+                    <div>
+                      <Link to={`/updateProduct/${product._id}`}>
+                        <button className="btn bg-primaryColor text-white">
+                          <FaPen></FaPen>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-        </div>
-        
       )}
     </div>
   );

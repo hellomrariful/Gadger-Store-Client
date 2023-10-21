@@ -34,7 +34,7 @@ const AddProduct = () => {
 
   return (
     <div>
-      <h2 className="text-center mt-20 font-bold text-3xl font-heading mb-20">
+      <h2 className="text-center md:mt-20 font-bold text-3xl font-heading md:mb-14 mb-10">
         Add New Product
       </h2>
       <div className=" bg-backgroundColor lg:px-40 md:px-16 px-8 md:mx-10 pt-14 pb-10">
@@ -165,7 +165,7 @@ const AddProduct = () => {
           </div>
 
           <input
-            className="bg-primaryColor w-full py-3 rounded-lg cursor-pointer"
+            className="bg-primaryColor text-white uppercase  font-sans font-semibold  w-full py-3 rounded-lg cursor-pointer"
             type="submit"
             value="Add Product"
           />

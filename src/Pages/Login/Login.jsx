@@ -79,7 +79,7 @@ const Login = () => {
         // Delay the navigation for 2 seconds (2000 milliseconds) to display the success message.
         setTimeout(() => {
           navigate(location?.state ? location.state : "/");
-        }, 1000);
+        }, 1200);
       })
       .catch((error) => {
         console.error(error.message);
@@ -88,15 +88,13 @@ const Login = () => {
 
   return (
     <div>
-      <div className="flex w-60 items-center text-center mx-auto px-6">
+      <div className="flex lg:w-60 w-52 mb-3 items-center text-center mx-auto px-6">
         <img src={fitness} alt="" />
       </div>
       <div className="flex justify-center">
         <div className=" px-8 py-12 bg-[#F7FAFC] rounded-2xl drop-shadow-2xl">
           <div className="relative flex flex-col shadow-none">
-            <h4 className="block text-center text-[22px]">
-              Log in to Fitness Hub
-            </h4>
+            <h4 className="block text-center text-[22px]">Log in to Gadger</h4>
             <div>
               {loggedError && (
                 <p className="border-2 p-3 mt-6 border-[#de4523] bg-[#ffebe8]  text-black rounded">

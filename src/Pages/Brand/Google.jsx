@@ -12,10 +12,9 @@ const Google = () => {
   const products = useLoaderData();
 
   const imageUrls = [
-    "https://www.apple.com/v/iphone-15-pro/b/images/overview/welcome/hero_endframe__ov6ewwmbhiqq_medium_2x.jpg",
-    "https://i.ibb.co/VTswGmg/img-06.jpg",
-    "https://i.ibb.co/MC3ryyB/image.png",
-    "https://i.ibb.co/MC3ryyB/image.png",
+    "https://www.jagranimages.com/images/newimg/25092023/25_09_2023-google_pixel_8_sereis_launch_date__23539783.webp",
+    "https://newsimg.giznext.com/mobile/production/news/wp-content/uploads/2022/05/05175456/Google-Pixel-Foldable-Smartphone-1200_675-735x400.png",
+    "https://i1.wp.com/crast.net/img/2023/10/Google-Pixel-8-and-Pixel-Watch-2-schedule-and-how.jpg?resize=1140,570",
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -87,11 +86,11 @@ const Google = () => {
       </div>
     </div>
 
-    <h1 className=" text-center mt-20 mb-10 font-bold text-3xl font-heading">
-      Top Products Of Apple
+    <h1 className=" text-center md:mt-20 mt-10 px-5 mb-10 font-bold text-3xl font-heading">
+      Top Products Of Google
     </h1>
 
-    <div className=" grid lg:grid-cols-2 gap-5">
+    <div className=" grid md:grid-cols-2 gap-5">
       {products.map((product) => (
         <div key={product._id}>
           <div className=" bg-backgroundColor grid grid-cols-3 items-center h-60  py-4 px-2 w-full">
@@ -127,7 +126,7 @@ const Google = () => {
               </p>
             </div>
 
-            <div className=" space-y-4 ml-20">
+            <div className=" space-y-4 ml-16">
               <div>
                 <Link to={`/productDetails/${product._id}`}>
                   <button className="btn bg-primaryColor">

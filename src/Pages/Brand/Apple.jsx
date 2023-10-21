@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   FaAngleLeft,
@@ -13,10 +12,10 @@ const Apple = () => {
   const products = useLoaderData();
 
   const imageUrls = [
-    "https://www.apple.com/v/iphone-15-pro/b/images/overview/welcome/hero_endframe__ov6ewwmbhiqq_medium_2x.jpg",
-    "https://i.ibb.co/VTswGmg/img-06.jpg",
-    "https://i.ibb.co/MC3ryyB/image.png",
-    "https://i.ibb.co/MC3ryyB/image.png",
+    "https://ispace.ge/blog/wp-content/uploads/2023/09/7-1024x480.png",
+    "https://i0.wp.com/connectingpointonline.com/wp-content/uploads/2017/07/BANNER-MacFamily_6up_FC_640x281.jpg?resize=640%2C281",
+    "https://www.erajaya.com/files/uploads/newseventattachment/uri/2021/Jan/15/600188b518f4a/available-web-banner-iphone-12-pro-dekstop-1091x_.jpg?token=3063ae63cef065bef572f6acc6e2787c",
+    "https://miro.medium.com/v2/resize:fit:1200/1*g8Zylk1j0myupxdVR2M3OA.jpeg"
   ];
 
   const [activeIndex, setActiveIndex] = React.useState(0);
@@ -94,10 +93,10 @@ const Apple = () => {
         <div className="text-center mt-20 text-red-500  font-bold text-3xl font-heading">Sold Out!! Products Not Available</div>
       ) : (
         <div>
-          <h1 className="text-center mt-20 mb-10 font-bold text-3xl font-heading">
+          <h1 className="text-center md:mt-16 px-6 mt-10 mb-10 font-bold text-3xl font-heading">
         Top Products Of Apple
       </h1>
-          <div className="grid lg:grid-cols-2 gap-5">
+          <div className="grid md:grid-cols-2 gap-5">
           {products.map((product) => (
             <div key={product._id}>
               <div className="bg-backgroundColor grid grid-cols-3 items-center h-60 py-4 px-2 w-full">
@@ -133,7 +132,7 @@ const Apple = () => {
                   </p>
                 </div>
 
-                <div className="space-y-4 ml-20">
+                <div className="space-y-4 ml-16">
                   <div>
                     <Link to={`/productDetails/${product._id}`}>
                       <button className="btn bg-primaryColor text-white">

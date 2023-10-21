@@ -53,6 +53,7 @@ const Navbar = () => {
     <>
       <nav className="flex gap-3 md:gap-4 lg:gap-10 lg:text-xl text-[18px]">
         <NavLink to="/">Home</NavLink>
+        <NavLink to="/shop">Shop</NavLink>
         <NavLink to="/addProduct">Add Product</NavLink>
         <NavLink to="/cart">My Cart</NavLink>
         {user ? null : <NavLink to="/register">Register</NavLink>}
@@ -62,9 +63,9 @@ const Navbar = () => {
 
   return (
     <nav className=" border-gray-200 dark:bg-gray-900">
-      <div className=" flex flex-wrap items-center justify-between mx-auto mt-8 mb-10">
+      <div className="flex flex-wrap items-center justify-between mx-auto mt-8 mb-10">
         <Link className="flex items-center">
-          <img src={logo} className="md:h-12 h-10 md:mr-3" alt="" />
+          <img src={logo} className="lg:h-12 h-9 md:mr-3" alt="" />
         </Link>
         <div className="flex items-center md:order-2">
           <div className="items-center mr-5">
@@ -76,10 +77,9 @@ const Navbar = () => {
               checked={theme === "light" ? false : true}
               />
               
-
               {/* sun icon */}
               <svg
-                className="swap-on fill-current w-10 h-10"
+                className="swap-on fill-current w-10 pt-1  h-10"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
@@ -88,7 +88,7 @@ const Navbar = () => {
 
               {/* moon icon */}
               <svg
-                className="swap-off fill-current w-10 h-10"
+                className="swap-off fill-current w-10 pt-1 h-10"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
@@ -114,7 +114,7 @@ const Navbar = () => {
               </button>
             ) : (
               <Link to="/login">
-                <button className="md:px-6 rounded bg-primaryColor md:py-3 text-xl px-3 py-2 mr-1 text-white">
+                <button className="lg:px-6 rounded bg-primaryColor lg:py-3 text-xl px-3 py-2 mr-1 text-white">
                   Login
                 </button>
               </Link>
@@ -195,6 +195,9 @@ const Navbar = () => {
             <ul className="flex flex-col p-4 space-y-4 text-center">
               <li className="block text-gray-900  hover:text-blue-700">
                 <NavLink to="/">Home</NavLink>
+              </li>
+              <li className="block text-gray-900  hover:text-blue-700">
+                <NavLink to="/shop">Shop</NavLink>
               </li>
               <li className="block text-gray-900  hover:text-blue-700">
                 <NavLink to="/addProduct">Add Product</NavLink>

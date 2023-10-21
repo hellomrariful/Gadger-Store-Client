@@ -7,15 +7,9 @@ import samsung from "../../assets/Samsung-4680.png";
 import canon from "../../assets/canon.png";
 import { Link, useLoaderData } from "react-router-dom";
 import ProductsCard from "../ProductsCard/ProductsCard";
-import { useState } from "react";
 
 const Home = () => {
   const products = useLoaderData();
-  const [productsToShow, setProductsToShow] = useState(6);
-
-  const loadMore = () => {
-    setProductsToShow(productsToShow + 6);
-  };
 
   return (
     <div>
@@ -63,20 +57,17 @@ const Home = () => {
       </h1>
 
       <div className=" grid md:grid-cols-3 gap-6">
-        {products.slice(0, productsToShow).map((product) => (
+        {products.slice(0, 6).map((product) => (
           <ProductsCard key={product._id} product={product}></ProductsCard>
         ))}
       </div>
 
       <div className="flex justify-center mt-10">
-        {products.length > productsToShow && (
-          <button
-            onClick={loadMore}
-            className="bg-primaryColor text-white px-3 py-3 rounded"
-          >
-            See More
+        <Link to={"/shop"}>
+          <button className="bg-primaryColor text-white px-4 py-3 rounded">
+            See All Products
           </button>
-        )}
+        </Link>
       </div>
 
       {/* Why Gager */}
