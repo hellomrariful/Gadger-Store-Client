@@ -117,7 +117,7 @@ const Register = () => {
       <div className="flex justify-center">
         <div className="px-8 pt-8 pb-10 bg-[#F7FAFC] rounded-2xl drop-shadow-2xl">
         <div className="relative flex flex-col">
-          <h4 className="block text-center text-[22px]">
+          <h4 className="block text-center text-[22px] font-heading">
             Create a new account
           </h4>
           {registerError && <p className="border-2 p-3 mt-6 border-[#de4523] bg-[#ffebe8] text-center text-black rounded">{registerError}</p>}

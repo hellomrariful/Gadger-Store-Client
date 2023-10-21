@@ -45,8 +45,8 @@ const Footer = () => {
               <hr className="border-[#49505A] my-8" />
 
               <div className="flex flex-col items-center sm:flex-row sm:justify-between">
-                <p className=" text-[#858585] dark:text-gray-300">
-                  © Gadger 2023. All Rights Reserved.
+                <p className=" text-[#858585] dark:text-gray-300 ">
+                 <Link to={'/'}> <span className="font-heading">© Gadger 2023</span></Link>. All Rights Reserved.
                 </p>
 
                 <div className="flex  -mx-2 md:mt-0 mt-3">

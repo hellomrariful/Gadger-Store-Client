@@ -93,7 +93,7 @@ const Apple = () => {
         <div className="text-center mt-20 text-red-500  font-bold text-3xl font-heading">Sold Out!! Products Not Available</div>
       ) : (
         <div>
-          <h1 className="text-center md:mt-16 px-6 mt-10 mb-10 font-bold text-3xl font-heading">
+          <h1 className="text-center md:mt-16 px-6 mt-10 mb-10 font-bold text-4xl font-heading">
         Top Products Of Apple
       </h1>
           <div className="grid md:grid-cols-2 gap-5">

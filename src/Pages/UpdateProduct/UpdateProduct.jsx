@@ -53,7 +53,7 @@ const UpdateProduct = () => {
 
   return (
     <div>
-      <h2 className="text-center lg:mt-20 font-bold text-3xl font-heading lg:mb-14 mt-14 mb-10 px-4">
+      <h2 className="text-center lg:mt-20 font-bold text-4xl font-heading lg:mb-14 mt-14 mb-10 px-4">
       Update {name}
       </h2>
       <div className=" bg-backgroundColor lg:px-40 md:px-16 px-8 md:mx-10 pt-14 pb-10">

@@ -34,7 +34,7 @@ const AddProduct = () => {
 
   return (
     <div>
-      <h2 className="text-center md:mt-20 font-bold text-3xl font-heading md:mb-14 mb-10">
+      <h2 className="text-center md:mt-20 font-bold text-4xl font-heading md:mb-14 mb-10">
         Add New Product
       </h2>
       <div className=" bg-backgroundColor lg:px-40 md:px-16 px-8 md:mx-10 pt-14 pb-10">

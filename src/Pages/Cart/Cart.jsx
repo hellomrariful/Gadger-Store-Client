@@ -90,11 +90,11 @@ const Cart = () => {
         </div>
       ) : products.length > 0 ? (
         <div className="container mx-auto md:mt-20">
-          <div className="md:flex  my-10">
-            <div className="md:w-3/4 rounded px-10 py-10 ">
+          <div className="md:flex my-10">
+            <div className="md:w-3/4 rounded md:px-10 px-3 py-10 ">
               <div className="flex justify-between border-b pb-8">
-                <h1 className="font-semibold text-2xl">Your Cart</h1>
-                <h2 className="font-semibold text-2xl">
+                <h1 className="font-semibold text-2xl font-heading">Your Cart</h1>
+                <h2 className="font-semibold text-2xl font-heading">
                   {products.length} {products.length === 1 ? "Item" : "Items"}{" "}
                   Added
                 </h2>
@@ -193,8 +193,8 @@ const Cart = () => {
                 ))
               )}
             </div>
-            <div id="summary" className="md:w-1/4 px-8 py-10">
-              <h1 className="font-semibold text-2xl border-b pb-8 text-center">
+            <div id="summary" className="md:w-1/4 md:px-8 py-10 px-3">
+              <h1 className="font-semibold text-2xl border-b pb-8 text-center font-heading">
                 Order Summary
               </h1>
               <div className="flex justify-between mt-10 mb-5">

@@ -83,7 +83,7 @@ const Samsung = () => {
       </div>
 
       {products.length === 0 ? (
-        <div className="text-center mt-20 text-red-500  font-bold text-3xl font-heading">
+        <div className="text-center mt-20 text-red-500  font-bold text-4xl font-heading">
           Sold Out!! Products Not Available
         </div>
       ) : (

@@ -88,7 +88,7 @@ const Sony = () => {
         </div>
       ) : (
         <div>
-          <h1 className="text-center md:mt-20 mt-10 px-5 mb-10 font-bold text-3xl font-heading">
+          <h1 className="text-center md:mt-20 mt-10 px-5 mb-10 font-bold text-4xl font-heading">
             Top Products Of Sony
           </h1>
           <div className="grid md:grid-cols-2 gap-5">

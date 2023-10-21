@@ -12,7 +12,7 @@ const Shop = () => {
     return (
         <div>
             <div>
-            <h1 className="text-center md:mt-20 mt-14 font-bold text-3xl font-heading mb-10">
+            <h1 className="text-center md:mt-20 mt-14 font-bold text-4xl font-heading mb-10">
         All Products
       </h1>
 
