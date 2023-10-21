@@ -7,9 +7,33 @@ import samsung from "../../assets/Samsung-4680.png";
 import canon from "../../assets/canon.png";
 import { Link, useLoaderData } from "react-router-dom";
 import ProductsCard from "../ProductsCard/ProductsCard";
+import Faq from "./Faq";
 
 const Home = () => {
   const products = useLoaderData();
+
+  const faqItems = [
+    {
+      question: "How can I place an order on GadgerBD?",
+      answer:
+        "To place an order on GadgerBD, follow these simple steps: Browse our product catalog and select the item you want to purchase. Click the 'Add to Cart' button. Review the items in your cart. Provide your shipping information and payment details. Once confirmed, click Place Order.",
+    },
+    {
+      question: "What payment methods do you accept?",
+      answer:
+        "We accept various payment methods, including credit/debit cards, PayPal, and other secure online payment options.",
+    },
+    {
+      question: "What is your return and refund policy?",
+      answer:
+        "Our return and refund policy can be found in our 'Returns & Refunds' section. We outline the conditions for returns and the process for requesting a refund.",
+    },
+    {
+      question: "Do you offer international shipping?",
+      answer:
+      "Yes, we do offer international shipping. Please note that additional shipping fees may apply, and delivery times can vary based on your location.",
+    },
+  ];
 
   return (
     <div>
@@ -246,6 +270,17 @@ const Home = () => {
             />
           </svg>
           <h1 className=" text-descriptionColor text-xl">24/7 Support</h1>
+        </div>
+      </div>
+      <div data-aos="fade-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000"
+        data-aos-offset="100">
+           <h1 className="text-center mt-20 font-bold text-3xl font-heading mb-5">
+           Have Question?
+      </h1>
+        <div className="text-2xl">
+          <Faq faqItems={faqItems} />
         </div>
       </div>
     </div>
