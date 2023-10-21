@@ -50,7 +50,6 @@ const router = createBrowserRouter([
         loader: () =>
           fetch(`https://gadger-store-server.vercel.app/cartProducts`),
       },
-
       {
         path: "/login",
         element: <Login></Login>,

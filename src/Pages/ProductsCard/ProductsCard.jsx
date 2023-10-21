@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 const ProductsCard = ({ product }) => {
   return (
     <div>
-      <div className="  text-gray-700 bg-white shadow-md rounded-xl bg-clip-border h-full pt-4 border-t">
-        <div className=" mx-4  overflow-hidden text-gray-700 bg-backgroundColor rounded-xl bg-clip-border">
-          <img src={product.photo} className=" mx-auto w-48 h-48" />
+      <div className="text-gray-700 bg-white shadow-md rounded-xl bg-clip-border h-full pt-4 border-t">
+        <div className="mx-4 overflow-hidden text-gray-700 bg-backgroundColor rounded-xl bg-clip-border">
+          <img src={product.photo} className="mx-auto w-48 h-48" />
         </div>
         <div className="p-6">
           <div className="flex items-center justify-between mb-2">

@@ -15,6 +15,7 @@ const ProductDetails = () => {
     productId: product._id,
     userEmail: user.email,
     name: product.name,
+    brand: product.brand,
     photo: product.photo,
     price: product.price,
   };

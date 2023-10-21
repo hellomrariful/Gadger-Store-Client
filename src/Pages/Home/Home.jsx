@@ -56,7 +56,7 @@ const Home = () => {
         Featured Products
       </h1>
 
-      <div className=" grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 gap-6">
         {products.slice(0, 6).map((product) => (
           <ProductsCard key={product._id} product={product}></ProductsCard>
         ))}
