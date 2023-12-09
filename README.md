@@ -6,6 +6,11 @@
 Live URL: [https://gadgerbd.web.app/](https://gadgerbd.web.app/)
 
 <details>
+<summary style="font-weight: bold; text:2xl" >Gadger BD Details</summary>
+Gadger is a Online Gadget sell ecommerce website. This project is developed for various Brand Product Sell. In this project, User can Buy Latest and Greatest Products. Gadger is built in a way that has all the features of a standard online e-commerce site. Like, user can add product, search product, buy product etc. This project also built in MERN Stack based.
+</details>
+
+<details>
 <summary style="font-weight: bold; text:2xl" >Key features and functionalities of Gadger BD</summary>
 
 - This project is developed for various Brand Product Sell.
