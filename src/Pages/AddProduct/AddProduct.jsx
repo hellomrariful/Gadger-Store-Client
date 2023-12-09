@@ -1,3 +1,4 @@
+// import axios from "axios";
 import Swal from "sweetalert2";
 
 const AddProduct = () => {
@@ -15,6 +16,11 @@ const AddProduct = () => {
     console.log(product);
 
     // send data to server
+    // const url = "https://gadger-store-server.vercel.app/products"
+    // axios.get(url, {withCredentials: true})
+
+
+
     fetch("https://gadger-store-server.vercel.app/products", {
       method: "POST",
       headers: {

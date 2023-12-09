@@ -17,7 +17,7 @@ const Cart = () => {
         .then((res) => res.json())
         .then((data) => {
           // Set quantity to 1 by default
-          data = data.map((product) => ({ ...product, quantity: 1 }));
+          // data = data.map((product) => ({ ...product, quantity: 1 }));
           setProducts(data);
           setIsLoading(false);
         })

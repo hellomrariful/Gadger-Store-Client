@@ -4,6 +4,7 @@ import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
 import { AuthContext } from "../../Providers/AuthProvider";
+import axios from "axios";
 
 const Login = () => {
   const [show, setShow] = useState(false);
@@ -25,7 +26,19 @@ const Login = () => {
 
     signInUser(email, password)
       .then((result) => {
-        console.log(result.user);
+        const loggedInUser = result.user
+        console.log(loggedInUser);
+        const user = {email}
+        axios.post('https://gadger-store-server.vercel.app/jwt', user, {withCredentials: true})
+        .then(res => {
+          console.log(res.user);
+          if(res.data.success){
+            navigate(location?.state ? location.state : "/");
+          }
+          console.log(res.data);
+
+        })
+
         e.target.reset();
         const displayErrorToast = () => {
           toast.dismiss("error-toast");

@@ -285,6 +285,8 @@ const Home = () => {
           <Faq faqItems={faqItems} />
         </div>
       </div>
+
+      
     </div>
   );
 };

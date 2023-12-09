@@ -11,7 +11,7 @@ const ProductDetails = () => {
 
   // console.log(product._id, product.name, product.price);
 
-  const dataSend = {
+    const dataSend = {
     productId: product._id,
     userEmail: user.email,
     name: product.name,
@@ -45,9 +45,12 @@ const ProductDetails = () => {
             .then((data) => {
               console.log(data);
               if (data.insertedId) {
-                Swal.fire("Congratulation!", product.name + " Successfully Added Your Cart", "success");
+                Swal.fire(
+                  "Congratulation!",
+                  product.name + " Successfully Added Your Cart",
+                  "success"
+                );
               }
-              
             });
         }
       });

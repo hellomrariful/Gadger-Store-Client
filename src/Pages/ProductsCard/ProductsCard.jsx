@@ -9,7 +9,7 @@ const ProductsCard = ({ product }) => {
         </div>
         <div className="p-6">
           <div className="flex items-center justify-between mb-2">
-            <p className="text-black font-semibold font-sans text-lg antialiased leading-relaxed text-blue-gray-900">
+            <p className="text-black font-semibold font-sans text-lg antialiased leading-relaxed text-blue-gray-900 dark:text-white">
               {product.name}
             </p>
             <p className="text-black font-semibold font-sans text-base antialiased leading-relaxed text-blue-gray-900">
