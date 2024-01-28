@@ -1,44 +1,51 @@
-# Gadger
+# Gadger | A Online Gadget sell E-commerce website.
 
-## [ Gadger Live Link](https://gadgerbd.web.app/)
+## Description
 
+Gadger is a Online Gadget sell E-commerce website. This project is developed for various Brand Product Sell. In this project, User can Buy Latest and Greatest Products. Gadger is built in a way that has all the features of a standard online e-commerce site. Like, user can add product, search product, buy product etc. This project also built in MERN Stack based.
 
-Live URL: [https://gadgerbd.web.app/](https://gadgerbd.web.app/)
+## Live Link
 
-<details>
-<summary style="font-weight: bold; text:2xl" >Gadger BD Details</summary>
-Gadger is a Online Gadget sell ecommerce website. This project is developed for various Brand Product Sell. In this project, User can Buy Latest and Greatest Products. Gadger is built in a way that has all the features of a standard online e-commerce site. Like, user can add product, search product, buy product etc. This project also built in MERN Stack based.
-</details>
+[Gadger Live](https://gadgerbd.web.app/)
 
-<details>
-<summary style="font-weight: bold; text:2xl" >Key features and functionalities of Gadger BD</summary>
+## Server Side
 
-- This project is developed for various Brand Product Sell.
+[Gadger Server Code](https://github.com/hellomrariful/Gadger-Store-Server)
 
-- In this project, You can Buy Latest and Greatest Products.
+## Gadger Homepage
 
-- Also This Project allows users to create accounts for buying Products.
+![Home Page of Gadger](/public/Gadger.png)
 
-- When users logged in then user can access detailed information about each product, and also user can see his/her added product in My Cart section.
+## Key Features
 
- - Gadger is built in a way that has all the features of a standard online e-commerce site. Like, user can add product, search product, buy product etc.
+- **Functionality**
 
-- Also user can find his/her by brand. This projects also has add light/dark mode and many more...
+  - This project is developed for various Brand Product Sell.
+  - In this project, You can Buy Latest and Greatest Products.
+  - Also This Project allows users to create accounts for buying Products.
+  - When users logged in then user can access detailed information about each product, and also user can see his/her added product in My Cart section.
+  - Gadger is built in a way that has all the features of a standard online e-commerce site. Like, user can add product, search product, buy product etc.
+  - Also user can find his/her by brand. This projects also has add light/dark mode and many more...
 
-</details>
+- **Authentication:**
 
-<details>
+  - Gmail and Email/Password authentication system.
+  - As a full stack web also protected admin route.
 
-<summary style="font-weight: bold; text:2xl" >Most Used Technologies In Gadger BD</summary>
+- **Responsive Design:**
+  - Enjoy a seamless experience across various devices.
+
+## Technologies Used
 
 - **Frontend:** JavaScript, React.js, Tailwind CSS and Material Tailwind.
 - **Backend:** Node.js, Express.js.
 - **Database:** MongoDB.
-- **Authentication:** Firebase Authentication.
+- **Authentication:** Firebase Authentication with JWT.
 - **Host:** Firebase.
 
-</details>
+## How to Run Locally
 
-#### Current Status: Live
-
-
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Configure environment variables for MongoDB, Firebase, and Stripe.
+4. Run the development server using `npm run dev`.
